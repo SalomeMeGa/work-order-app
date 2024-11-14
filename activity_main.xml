@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+        <!-- Campo para el número de ticket -->
+        <EditText
+            android:id="@+id/editTextTicketNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Ticket" />
+
+        <!-- Campo para ingresar la colonia -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Colonia"
+            android:inputType="text" />
+
+        <!-- Campo para ingresar el correo electrónico -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Seleccionar prioridad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona la Prioridad:"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Selector de prioridad -->
+        <Spinner
+            android:id="@+id/spinnerPriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Fecha y hora de inicio -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha y Hora de Inicio"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/editTextStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selecciona la Fecha de Inicio"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/editTextStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selecciona la Hora de Inicio"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <!-- Fecha y hora de término -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha y Hora de Término"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editTextEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selecciona la Fecha de Término"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/editTextEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selecciona la Hora de Término"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <!-- ¿Se concluyó el servicio? -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Se concluyó el servicio?"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerServiceConcluded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Tipo de atención -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de atención"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerServiceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--Descripción del servicio realizado-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción del servicio realizado"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+        <EditText
+            android:id="@+id/descripcion_servicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Redacte aquí"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:padding="16dp"/>
+
+        <!--Definición de firmas-->
+        <TextView
+            android:id="@+id/title_text_firma_ingeniero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firma del Ingeniero"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+        <!-- Panel de firma -->
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            android:id="@+id/signature_pad"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="#EFEFEF" />
+
+        <TextView
+            android:id="@+id/title_text_firma_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firma del Cliente"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+        <!-- Segundo panel de firma -->
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            android:id="@+id/signature_pad_second"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="#EFEFEF" />
+
+        <!-- Botón para guardar PDF -->
+        <Button
+            android:id="@+id/buttonSavePDF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar PDF"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
