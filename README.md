@@ -1,8 +1,15 @@
-# Optimización de Flujo de Trabajo para Órdenes de Trabajo
+# Optimización de Flujo de Trabajo para Órdenes de Trabajo, iniciativa OT-NETJER
 
 ## Descripción del Proyecto
 
-Este proyecto tiene como objetivo digitalizar y optimizar el flujo de trabajo para la gestión de órdenes de trabajo mediante una aplicación móvil para dispositivos Android. La aplicación está diseñada para reemplazar procesos en papel, agilizando la comunicación y la captura de información en tiempo real entre clientes y técnicos de campo.
+Este proyecto tiene como objetivo digitalizar y optimizar el flujo de trabajo para la gestión de órdenes de trabajo mediante una aplicación móvil para dispositivos Android. La aplicación está diseñada para automatizar y agilizar el proceso de gestión de solicitudes de servicio del área de ingeniería, esto permitirá:
+   Obtener control en la asignación de ticket de la herramienta de gestión Jira
+   Tener datos solidos del cliente al que se realizará la visita
+   Datos como quien reporta, nombre de la compañia, dirección, correo electronico, telefono etc.
+   Saber que tipo de servicio se realizará 
+ 
+ 
+ agilizando la comunicación y la captura de información en tiempo real entre clientes y técnicos de campo.
 
 ## Funcionalidades Principales
 
